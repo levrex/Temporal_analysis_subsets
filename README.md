@@ -16,6 +16,6 @@ Then for each visit:
   
 Finally we visualize this in a line graph (where you stratify for your labels of interest). See illustration below as aid for interpretation: 
 
-## Overview of JIP-related Github Repo's
+## Visualizing & Interpreting Results
 ![alt text](figures/md/Legend_silhouette_score_alt.png)
 
