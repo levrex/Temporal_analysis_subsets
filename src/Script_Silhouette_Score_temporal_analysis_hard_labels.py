@@ -36,7 +36,7 @@ for time in sorted(df_raw[VISIT_ID].unique()):
     # Run the silhouette-like function (cluster vs rest)
     individual_ss = ft.one_vs_rest_silhouette(D_visit, df_visit[CLUSTER].values)
     # or true silhouette (cluster vs nearest cluster)
-    #individual_ss = ft.one_vs_rest_silhouette(D_visit, df_visit[CLUSTER].values)
+    #individual_ss = ft.manual_silhouette_samples(D_visit, df_visit[CLUSTER].values)
 
     # 2. Add these scores back to your visit dataframe so we can group them
     df_visit['patient_ss'] = individual_ss
