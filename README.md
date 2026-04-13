@@ -21,3 +21,13 @@ Finally we visualize this in a line graph (where you stratify for your labels of
 
 ## Hard-label clustering
 We also have an alternative method (src/Script_Silhouette_Score_temporal_analysis_hard_labels.py) which calculates the subset coherency with hard label clusters instead of a numeric vector.
+
+## Statistical significance
+To assess how much better the identified clusters perform compared to random clustering, you can run a permutation analysis (e.g., 1000 iterations), where the data are randomly clustered each time. Based on these permutations, an empirical p-value can be calculated.
+
+![alt text](figures/md/example_permutation_tests.png)
+
+Based on example figure above: clusters 1, 3, and 4 appear to be more stable than would be expected by chance.  
+There is an example script in this github (notebooks/Example_subset_coherency_with_permutations.ipynb)
+
+
